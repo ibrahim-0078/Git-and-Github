@@ -1,0 +1,58 @@
+Git and Github Basic Commands => install git bash
+
+Configuring Git => means hum apni details git ky andar store krwa ry hain
+
+1 => git config --global user.name "My Name"
+2 => git config --global user.email "someone@email.com"
+3 => git config --list
+
+Clone and Status
+
+4 => git clone someones github link => cloning a repository on our local system
+5 => git status => displays the state of the code
+
+Add ,Commit and Push
+
+6 => git add file name => adds new or changed file in your working directory =>
+  => git add . => sari files ko 1 sath add krna
+7 => git commit -m "some msg" => it is the record of change
+8 => git push origin main => upload a local repository to github repository
+
+Pushing Local Repository to Github
+
+9 => git init => used to create a new git repository
+10 => git remote add origin => github repository link => paste here
+11 => git remote -v => to verify remote
+12 => git push origin main
+
+Branch Commands
+
+13 => git branch => to check branch
+14 => git branch -M branch name => to rename branch
+15 => git checkout branch name => to navigate
+16 => git checkout -b branch name => to create new branch
+17 => git branch -d branch name => to delete branch
+
+Merging Branches
+
+18 => git diff branch name => to compare commits,branches,files etc
+19 => git merge branch name => to merge 2 branches
+OR 
+=> Create a PR => pull request => it lets you tell others about changes you have pushed to a branch in a repository on GitHub
+
+Pull Command => used to fetch content from github repository and imidiately update the local repository to match that content
+
+20 => git pull origin main
+
+Fixing Mistakes 
+
+Case 1 => Staged Changes
+21 => git reset file name => OR => git reset
+
+Case 2 => Commited Changes(for 1 commit)
+22 => git reset HEAD~1
+
+Case 3 => Commited Changes(for many commits)
+23 => git reset commit hash
+24 => git reset --hard commit hash
+25 => git log => All commits information (into the commit information we found commit hash)
